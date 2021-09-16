@@ -60,5 +60,5 @@ public class Begin08Switch03 {
 
 		sc.close();
 	}	
-	}	
+
 }
