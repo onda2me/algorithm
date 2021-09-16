@@ -20,7 +20,6 @@ public class Begin08Switch02 {
 			
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
-		sc.close();
 
 		switch(n) {
 			case 1: 
@@ -48,5 +47,8 @@ public class Begin08Switch02 {
 				System.out.println("해당하는 요일이 없습니다.");
 				break;
 		}
+
+		
+		sc.close();
 	}	
 }
