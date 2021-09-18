@@ -8,19 +8,34 @@ public class Begin11Oper {
 
 	public static void main(String[] args) {
 
-		int a = 85;
+		int a = 5;
+		int b = -2;
+		int c = 0;
+		
 
-		// if 를 사용한 조건문
-		System.out.println("if 를 사용한 조건문 : ");
-		if(a < 90) 
-			System.out.println("불합격");
-		else
-			System.out.println("합격");
+		// 산술연산
+		c = a + b;
 
-		// 3항 연산자를 사용한 조건문
-		System.out.println("3항 연산자를 사용한 조건문 : ");
-		String result = (a < 90) ? "불합격" : "합격";
-		System.out.println(result);
+		// 문자열 연결
+		System.out.println("a + b = " + "얼마일까요?");
+		System.out.println("a + b = " + c + " 입니다.");
+
+
+		// 대입연산
+		c += 1;
+		System.out.println("c += 1 연산후 c 얼마일까요?");
+		System.out.println("c = " + c + " 입니다.");
+
+		// 증감연산
+		c++;
+		System.out.println("c++ 연산후 c는 얼마일까요?");
+		System.out.println("c = " + c + "입니다.");
+
+		// 조건연산
+		String s =  (c > 0 ? "크다" : "작거나같다" );
+		System.out.println("c는 0보다 클까요?");
+		System.out.println("c는 0보다 " + s);
+		
 
 	}	
 }
