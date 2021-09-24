@@ -29,14 +29,14 @@ package com.onda2me.algorithm.kakao;
 예) 37
 
 # 입출력 예제
-예제	dartResult	answer	설명
-1	    1S2D*3T	    37	    1^1 * 2 + 2^2 * 2 + 3^3
-2	    1D2S#10S	9	    1^2 + 2^1 * (-1) + 10^1
-3	    1D2S0T	    3	    1^2 + 2^1 + 0^3
-4	    1S*2T*3S	23	    1^1 * 2 * 2 + 2^3 * 2 + 3^1
-5	    1D#2S*3S	5	    1^2 * (-1) * 2 + 2^1 * 2 + 3^1
-6	    1T2D3D#	    -4	    1^3 + 2^2 + 3^2 * (-1)
-7	    1D2S3T*	    59	    1^2 + 2^1 * 2 + 3^3 * 2
+예제	dartResult	 answer	 설명
+1	    1S2D*3T	     37	     1^1 * 2 + 2^2 * 2 + 3^3
+2	    1D2S#10S	 9	     1^2 + 2^1 * (-1) + 10^1
+3	    1D2S0T	     3	     1^2 + 2^1 + 0^3
+4	    1S*2T*3S	 23	     1^1 * 2 * 2 + 2^3 * 2 + 3^1
+5	    1D#2S*3S	 5	     1^2 * (-1) * 2 + 2^1 * 2 + 3^1
+6	    1T2D3D#	     -4	     1^3 + 2^2 + 3^2 * (-1)
+7	    1D2S3T*	     59	     1^2 + 2^1 * 2 + 3^3 * 2
 
 */
 public class Kakao17Ques2 {
@@ -56,8 +56,7 @@ public class Kakao17Ques2 {
             result = getPoint(question[i]);
             System.out.println(result +" ==  " + answer[i] + " \t-> " + (result == Integer.parseInt(answer[i])));
         }
-
-	}
+    }
 
     // 점수 계산 함수
     public static int getPoint(String pointStr) {
@@ -86,7 +85,6 @@ public class Kakao17Ques2 {
         // }
 
         // 보너스와 옵션에 따른 점수계산 함수
-
         for(int i=0; i<pointStr.length(); i++) {
 
             char c = pointStr.charAt(i);
