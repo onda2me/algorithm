@@ -2,7 +2,7 @@ package com.onda2me.algorithm.begin;
 
 /*
 	@문제
-	입력받은 숫자에 해당하는 구구단을 출력하기
+	1단부터 입력받은 숫자까지 구구단을 출력하기
 	
 	@ 입력
 	3

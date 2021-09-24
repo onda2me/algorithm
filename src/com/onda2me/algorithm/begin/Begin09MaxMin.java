@@ -2,33 +2,56 @@ package com.onda2me.algorithm.begin;
 
 /*
 	@문제
-	입력받은 숫자에 해당하는 구구단을 출력하기
+	입력받은 숫자에서 최소값과 최대값을 구하는 함수를 만들어 최소값과 최대값을 출력한다.
+	
 	
 	@ 입력
-	3
+	5 3 8 4
 
 	@ 출력
-	1*1=1
-	1*2=2
-	1*3=3
-	1*4=4
-	1*5=5
-	1*6=6
-	1*7=7
-	1*8=8
-	1*9=9
-	2*1=2
-	2*2=4
-	. . .
-	9*8=72
-	9*9=81
+	3 8 
+
 */
 
 public class Begin09MaxMin {
 
-	public static void main(String[] args) {
-			
+	private static int[] a = {5, 3, 8, 4};
 
+	public static void main(String[] args) {	
+		
+		printMin();
+		printMax();
+
+	}	
+
+	/**
+	 * 최소값을 구하여 출력한다.
+	 */
+	public static void printMin() {
+
+		int min = Integer.MAX_VALUE;
+		for(int i=0; i<a.length; i++) {
+
+			if(min > a[i])
+				min = a[i];
+		}
+
+		System.out.println(min);
+	}
+
+	/**
+	 * 최대값을 구하여 출력한다.
+	 */
+	public static void printMax() {
+
+		int max = Integer.MIN_VALUE;
+		for(int i=0; i<a.length; i++) {
+
+			if(max < a[i])
+				max = a[i];
+		}
+
+		System.out.println(max);
 	}	
 }
 
