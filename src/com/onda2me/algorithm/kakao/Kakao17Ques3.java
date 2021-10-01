@@ -3,7 +3,7 @@ package com.onda2me.algorithm.kakao;
 import java.util.LinkedList;
 
 /*
-캐시(난이도: 하)
+# 캐시(난이도: 하)
 캐시 크기에 따른 실행시간 측정 프로그램을 작성하시오.
 
 # 입력 형식
