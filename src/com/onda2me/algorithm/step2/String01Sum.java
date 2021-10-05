@@ -54,8 +54,9 @@ public class String01Sum {
     private static void solution(int n, String num, int answer) {
 
         int sum = 0;
+       
         for(int i=0; i<num.length(); i++) {
-            sum += Integer.parseInt(num.substring(i, i+1));
+            sum += Integer.parseInt(num.substring(i, i+1));  // 한글자씩 잘라서 숫자로 변환
         }
 
         System.out.println((sum == answer) + " -> (" + sum + " == " + answer +") \t\t" + num +" sum");
