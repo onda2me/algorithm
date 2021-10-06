@@ -74,26 +74,26 @@ public class String06CoupleBracket {
 
             switch(c) {
 
-                case '(':
+                case '(':                       // 열린괄호 push
                     list.add(String.valueOf(c));         
                     break;
-                case '[':
+                case '[':                       // 열린괄호 push
                     list.add(String.valueOf(c));
                         break;
-                case ')':
-                    if(listSize > 0 && "(".equals(list.get(listSize-1))) 
-                        list.remove(listSize-1);
-                    else
+                case ')':                       // 닫힌괄호
+                    if(listSize > 0 && "(".equals(list.get(listSize-1)))    // 마지막 입력값과 짝인지 비교
+                        list.remove(listSize-1);                            // 짝이면 pop
+                    else                        // 짝이 아니면 균형실패 :false
                         flag = false;
                     break;
                 case ']':
-                    if(listSize > 0 && "[".equals(list.get(listSize-1))) 
-                        list.remove(listSize-1);
-                    else
-                        flag = false;
+                    if(listSize > 0 && "[".equals(list.get(listSize-1)))    // 마지막 입력값과 짝인지 비교
+                        list.remove(listSize-1);                            // 짝이면 pop
+                    else                        // 짝이 아니면 균형실패 :false
+                        flag = false;   
                     break;
             }
-            if(flag == false)
+            if(flag == false)                   // 균형실패면 실행 중지
                 break;
         }
 
