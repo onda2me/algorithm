@@ -25,8 +25,7 @@ A: 10, B: 11, ..., F: 15, ..., Y: 34, Z: 35
 
 
 ### 문제원본    
-[question_url](question_url){: target="_blank"}
-[question_url]: https://www.acmicpc.net/problem/11005
+[https://www.acmicpc.net/problem/11005](https://www.acmicpc.net/problem/11005){: target="_blank"}
 
 */
 
