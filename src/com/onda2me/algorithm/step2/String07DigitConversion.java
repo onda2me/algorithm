@@ -46,7 +46,7 @@ public class String07DigitConversion {
      * 출력값 : 10(10) -> 1010(2)                iscorrect? true
      * @param num       10진수 숫자
      * @param b         변경하는 진법
-     * @param answer    n진수 변환 값
+     * @param answer    b진수 변환 값
      */
     private static void solution(int num, int b, String answer) {
 
