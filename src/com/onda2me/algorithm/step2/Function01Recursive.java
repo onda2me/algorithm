@@ -127,7 +127,7 @@ public class Function01Recursive {
         if(m < 1)
             return 1;
 
-            return n * squared(n, m-1);
+        return n * squared(n, m-1);
     }
 
     
