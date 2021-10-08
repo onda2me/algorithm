@@ -11,7 +11,7 @@ package com.onda2me.algorithm.step2;
 
 */
 
-public class Function01Recursive02 {    
+public class Function02Recursive {    
    
     public static void main(String[] args) {
 
@@ -38,6 +38,8 @@ public class Function01Recursive02 {
     public static String reverse(String str) {
 
         StringBuilder bld = new StringBuilder();
+
+        // 문자열 끝에서 부터 한글자씩 읽어서 저장
         for(int i=0; i<str.length(); i++) {
 
             bld.append(str.substring(str.length()-1-i, str.length()-i));
