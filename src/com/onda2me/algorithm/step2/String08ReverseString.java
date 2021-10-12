@@ -34,11 +34,16 @@ public class String08ReverseString {
     public static void main(String[] args) {
 
         // 입력정보
-       solution("I am happy today", "I ma yppah yadot");
-       solution("We want to win the first prize", "eW tnaw ot niw eht tsrif ezirp");
+        solution("I am happy today", "I ma yppah yadot");
+        solution("We want to win the first prize", "eW tnaw ot niw eht tsrif ezirp");
     }
 
 
+    /**
+     * 주어진 문자열을 " "를 기준으로 단어로 구분하여 단어의 문자를 거꾸로 출력한다.
+     * @param str
+     * @param answer
+     */
     private static void solution(String str, String answer) {
 
         String[] arr = str.split(" ");      // " "로 단어를 구분하여 배열로 저장

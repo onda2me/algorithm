@@ -34,7 +34,7 @@ public class Function01Recursive {
         System.out.println("squared(2, 4) = "+ result );  
 
         // n부터 1씩 감소하여 출력하기
-        resultstr = decrease(5);
+        resultstr = decrease(n);
         System.out.println("decrease("+n+") = "+ resultstr );
 
         // 10진수를 2진수로 변환

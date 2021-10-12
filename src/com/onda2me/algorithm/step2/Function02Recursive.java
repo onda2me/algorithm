@@ -24,7 +24,7 @@ public class Function02Recursive {
         System.out.println("f("+str+") = "+ reverse(str) ); 
         
         System.out.println("--------------------");
-        System.out.println("r("+str+") = "+ reverse(str.toCharArray(), str.length()));        
+        System.out.println("r("+str+") = "+ reverse(str.toCharArray(), str.length()-1));        
     }
     
 
@@ -64,10 +64,10 @@ public class Function02Recursive {
      */
     public static String reverse(char arr[], int n) {
         
-        if(n <= 0)
+        if(n < 0)
             return "";
 
-        return arr[n-1] + reverse(arr, n-1);
+        return arr[n] + reverse(arr, n-1);
     }
 
 }
