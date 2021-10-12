@@ -50,9 +50,8 @@ public class TestIndexController {
 		// 가상데이타 생성위한 랜덤변수
 		Random rnd = new Random();
 		
-		// 한달 1일 ~ 30일 까지 데이타 저장
+		// 예제를 위해 한달 1일 ~ 30일까지 가상 데이타 생성 및 저장
 		// 실제는 DB또는 Json 연동으로 Data를 읽어서 처리한다.
-		// 샘플제작을 위해 가상 데이타 생성 및 저장
 		for(int i=1; i<=30; i++) {
 			
 			mapStat = new HashMap<String, Object>();
