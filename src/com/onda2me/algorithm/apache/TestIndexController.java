@@ -78,7 +78,7 @@ public class TestIndexController {
 		// 일평균
 		Map<String, Object> mapAvg = new HashMap<String, Object>(); 
 		mapAvg.put("count", new Double (sumCount/30)); 
-		mapAvg.put("member", new Double(sumCount/30)); 
+		mapAvg.put("member", new Double(sumMember/30)); 
 		model.addAttribute("avg", mapAvg); 		
 		
 		// 데이터 저장 
