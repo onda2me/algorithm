@@ -65,6 +65,9 @@ public class TestIndexController {
 			sumMember += Integer.parseInt(mapStat.get("member").toString());
 		}
 		
+		// 리스트 데이터 저장 
+		model.addAttribute("stat", listStat); 
+
 		// 통계정보
 		model.addAttribute("title", excelTitle); 
 		model.addAttribute("year", inputYear); 
@@ -82,8 +85,7 @@ public class TestIndexController {
 		mapAvg.put("member", new Double(sumMember/30)); 
 		model.addAttribute("avg", mapAvg); 		
 		
-		// 데이터 저장 
-		model.addAttribute("stat", listStat); 
+
 		
 		// 엑셀 출력
 		return new ExcelView(excelTitle+"_"+inputYear+inputMonth+"_리포트", "excel_template_test.xls");		
